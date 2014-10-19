@@ -1,0 +1,7 @@
+{
+  "name": "shed",
+  "version": "0.0.1",
+  "description": "A command line utility for quickly starting and delivering projects",
+  "author": "Nick Noble",
+  "license": "MIT"
+}
