@@ -3,5 +3,11 @@
   "version": "0.0.1",
   "description": "A command line utility for quickly starting and delivering projects",
   "author": "Nick Noble",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "bin": {
+    "shed": "shed.js"
+  },
 }
