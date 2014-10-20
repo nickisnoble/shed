@@ -10,6 +10,14 @@ Shed is a working title, other possible names: workbench, anvil, apprentice, but
 THIS ISN'T READY YET.
 
 ## Documentation
+Aka things that work so far.
+
+Prerequisites: `npm`, `bundler`.
+
+### The create command
+
+`$ shed create foo` - create a new directory called 'foo', sets up [static site boilerplate](https://github.com/nickisnoble/hotplate), installs dependancies (npm + bundle), and inits a repository. For now, pkg.json needs to be edited manually.
+
 _(Coming soon)_
 
 ## Plans
