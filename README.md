@@ -16,15 +16,15 @@ _(Coming soon)_
 These are the ideal features. Once things are actually implemented, they will be removed from plans and rewritten under documentation.
 
 ### The create command
-Creates new projects from boilerplates. Defaults to static. This is the core functionality. Boilerplates/templates are possibly stored in `~/.shed/templates`, and are each version controlled (though `.git` is not copied during the `create` command). Also fills in package.json, etc, with the proper info.
+Creates new projects from boilerplates. Defaults to static. This is the core functionality. Boilerplates/templates are possibly stored in `~/.shed/templates`, and are each locally version controlled (though `.git` is not copied during the `create` command). Also fills in package.json, etc, with the proper info.
 
 Should work like this:
 
-`$ shed create foo` - create a new directory called 'foo', set up static site boilerplate, run follow up.
+`$ shed create foo` - create a new directory called 'foo', set up [static site boilerplate](https://github.com/nickisnoble/hotplate), run follow up.
 
-`$ shed create -w foo` - create a new directory called 'foo', set up wordpress theme boilerplate, run follow up.
+`$ shed create -w foo` - create a new directory called 'foo', set up [wordpress theme boilerplate](https://github.com/NickNobleWorks/Nothin), run follow up.
 
-`$ shed create -g foo` - create a new directory called 'foo', set up ghost theme boilerplate, run follow up.
+`$ shed create -g foo` - create a new directory called 'foo', set up [ghost theme boilerplate](https://github.com/nickisnoble/apparition), run follow up.
 
 #### Follow up = 
 
