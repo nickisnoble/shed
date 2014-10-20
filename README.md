@@ -1,6 +1,6 @@
 # shed
 
-A command line utility for quickly starting and delivering projects
+A command line utility for quickly starting and delivering projects. A shed to keep your boilerplates.
 
 ## Getting Started
 ~~Install the module with: `npm install -g shed`~~
@@ -13,7 +13,7 @@ _(Coming soon)_
 ## Plans
 
 ## The create command
-Creates new projects from boilerplates. Defaults to static. This is the core functionality.
+Creates new projects from boilerplates. Defaults to static. This is the core functionality. Boilerplates/templates are possibly stored in `~/.shed/templates`, and are each version controlled (though `.git` is not copied during the `create` command). Also fills in package.json, etc, with the proper info.
 
 Should work like this:
 
@@ -46,6 +46,8 @@ etc.
 ### Package command
 This packages up the project. Possibly configured by a `shed.json` file. 
 
+Should work like this:
+
 `$ shed package` - makes a copy of the project without dev stuff, and other things depending on the project type.
 
 `$ shed package -i` - Also increment the project version numbers
@@ -59,6 +61,17 @@ This packages up the project. Possibly configured by a `shed.json` file.
 - compress images then copy to new folder
 - zip folder, remove new folder (leaving the zip)
 - Done!
+
+### Define Command
+Allows you to define new templates/boilerplates
+
+Should work like this:
+
+`$ shed define [filepath] foo` - Takes the directory specified (or assumes current directory) and makes it into a template, named 'foo', for future creation. There must not already be a template named 'foo', and a flag is assigned i.e. `-f, --foo`.
+
+`$ shed define -u [filepath] foo` - Updates an already existing template called 'foo' with the contents of the directory at filepath, makes a commit to the template.
+
+
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
