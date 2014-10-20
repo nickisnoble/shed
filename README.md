@@ -30,9 +30,9 @@ Should work like this:
 
 `$ shed create foo` - create a new directory called 'foo', set up [static site boilerplate](https://github.com/nickisnoble/hotplate), run follow up.
 
-`$ shed create -w foo` - create a new directory called 'foo', set up [wordpress theme boilerplate](https://github.com/NickNobleWorks/Nothin), run follow up.
+`$ shed create foo -w` - create a new directory called 'foo', set up [wordpress theme boilerplate](https://github.com/NickNobleWorks/Nothin), run follow up.
 
-`$ shed create -g foo` - create a new directory called 'foo', set up [ghost theme boilerplate](https://github.com/nickisnoble/apparition), run follow up.
+`$ shed create foo -g` - create a new directory called 'foo', set up [ghost theme boilerplate](https://github.com/nickisnoble/apparition), run follow up.
 
 #### Follow up = 
 
@@ -52,7 +52,7 @@ Should work like this:
 
 etc.
 
-`$ shed config -L --foo` - Sets value locally to the project, instead of global default
+`$ shed config -L --baz` - Sets value locally to the project, instead of global default
 
 ### Package command
 This packages up the project. Possibly configured by a `shed.json` file. 
@@ -61,7 +61,7 @@ Should work like this:
 
 `$ shed package` - makes a copy of the project without dev stuff, and other things depending on the project type.
 
-`$ shed package -i` - Also increment the project version numbers
+`$ shed package -i` - Also increment the project version numbers and commits accordingly
 
 #### Example: WordPress site.
 
@@ -78,9 +78,9 @@ Allows you to define new templates/boilerplates
 
 Should work like this:
 
-`$ shed define [filepath] foo` - Takes the directory specified (or assumes current directory) and makes it into a template, named 'foo', for future creation. There must not already be a template named 'foo', and a flag is assigned i.e. `-f, --foo`.
+`$ shed define foo` - Takes the directory specified (or assumes current directory) and makes it into a template, named 'foo', for future creation. There must not already be a template named 'foo', and a flag is assigned i.e. `-f, --foo`.
 
-`$ shed define -u [filepath] foo` - Updates an already existing template called 'foo' with the contents of the directory at filepath, makes a commit to the template.
+`$ shed define foo  -u` - Updates an already existing template called 'foo' with the contents of the directory at filepath, makes a commit to the template.
 
 
 
