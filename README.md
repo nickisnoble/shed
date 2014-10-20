@@ -13,8 +13,9 @@ THIS ISN'T READY YET.
 _(Coming soon)_
 
 ## Plans
+These are the ideal features. Once things are actually implemented, they will be removed from plans and rewritten under documentation.
 
-## The create command
+### The create command
 Creates new projects from boilerplates. Defaults to static. This is the core functionality. Boilerplates/templates are possibly stored in `~/.shed/templates`, and are each version controlled (though `.git` is not copied during the `create` command). Also fills in package.json, etc, with the proper info.
 
 Should work like this:
