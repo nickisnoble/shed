@@ -32,19 +32,19 @@ Should work like this:
 - git init, commit .gitignore, commit others
 
 ### Config command
-Sets defaults to use in package.json's, WordPress theme frontmatter, etc. This is an enhancement, for now we could just ask 
+Sets defaults to use in package.json's, WordPress theme frontmatter, etc. This is an enhancement, for now we could just ask on `create`. Ideally, we would ask users to set this up on install of the utility.
 
 Should work like this:
 
-`$ shed config -a` - Set global author (fallback to git user?)
+`$ shed config -a` - Set default author (fallback to git user?)
 
-`$ shed config -l` - Set global license (fallback to MIT?)
+`$ shed config -l` - Set default license (fallback to MIT?)
 
-`$ shed config -w` - Set global author website (If not set, use project git repo)
+`$ shed config -wp` - Set local wordpress install location (for symlinking)
 
 etc.
 
-`$ shed config -L --foo` - Sets value locally to the project, instead of globally
+`$ shed config -L --foo` - Sets value locally to the project, instead of global default
 
 ### Package command
 This packages up the project. Possibly configured by a `shed.json` file. 
