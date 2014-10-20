@@ -2,6 +2,8 @@
 
 A command line utility for quickly starting and delivering projects. A shed to keep your boilerplates.
 
+Shed is a working title, other possible names: workbench, anvil, apprentice, butler.
+
 ## Getting Started
 ~~Install the module with: `npm install -g shed`~~
 
