@@ -38,6 +38,7 @@
     "shed": "lib/shed.js"
   },
   "dependencies": {
-    "commander": "^2.4.0"
+    "commander": "^2.4.0",
+    "shelljs": "^0.3.0"
   }
 }
