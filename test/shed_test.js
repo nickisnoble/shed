@@ -22,6 +22,7 @@ var shed = require('../lib/shed.js');
     test.ifError(value)
 */
 
+/*
 exports['awesome'] = {
   setUp: function(done) {
     // setup here
@@ -34,3 +35,4 @@ exports['awesome'] = {
     test.done();
   },
 };
+*/
